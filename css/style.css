@@ -7,6 +7,21 @@
 
 }
 @font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'futura_bk_btbook';
     src: url('../fonts/futura_bk_bt_book-webfont.woff2') format('woff2'),
          url('../fonts/futura_bk_bt_book-webfont.woff') format('woff');
@@ -36,12 +51,47 @@ a[class*='fa-']:before {
     width: 1em;
 }
 
+/***********  Components design    ****************/
+.btn-c2d-primary{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  width:335px;
+  padding: 15px 0px;
+  background: #3EBDCC;
+  border-color: #3EBDCC;
+  border-radius: 8px;
+}
+.btn-outline-we-do{
+  width:335px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 0;
+  color: #3EBDCC;
+  border:1px solid #3EBDCC;
+  border-radius:8px;
+}
 
+.container-1320{
+  width: 1320px;
+  max-width: 100%;
+}
 .container-1280{
   width: 1280px;
   max-width: 100%;
 }
 .container-1160{
+  width: 1160px;
+  max-width: 100%;
+}
+.container-1120{
   width: 1160px;
   max-width: 100%;
 }
@@ -95,14 +145,6 @@ header.site-header nav{
 .site-navigation ul.navbar-nav li:hover a.nav-link{
   color:#005579;
 }
-/*.site-navigation ul.navbar-nav li:last-child a.nav-link{
-  background: linear-gradient(180deg, #CAC32C 0%, #A49E1A 99.48%);
-  border-radius: 10px;
-  color:#ffffff;
-  width:165px;
-  padding: 11px 0;
-  text-align: center;
-}*/
 
 /***** Submenu design *****/
 
@@ -191,17 +233,377 @@ header.site-header nav{
     color:#ffffff!important;
 }
 
-/* Heightlight footer box */
-
-.heightlight-footer-box{
-  background: #F4A41D;
-
-}
-
+/******   Banner with content section 3/06/2021  ********/
 .homepage--banner{
   background: #fcfcfc url("../images/homepage_banner.jpg") no-repeat;
   background-position: bottom;
+  background-size: contain;
+  margin-bottom: 66px;
+}
+.banner-left-col h1{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #005579;
+  margin-bottom:38px;
+  max-width: 395px;
+}
+.banner-left-col p{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #005579;
+  max-width: 395px;
+}
+
+.overlap-group{
+  position: relative;
+  height:672px;
+}
+.bg-circle-shape-pattern{
+  width:90%;
+  height:546px;
+  background:#3EBDCC;
+  border-radius: 50%;
+  margin:0 auto;
+  position: absolute;
+  top: 119px;
+}
+
+.rectangle-151 {
+    left: 0;
+    position: absolute;
+    top: 137px;
+}
+.rectangle-152 {
+    left: 259px;
+    object-fit: cover;
+    position: absolute;
+    top: -7px;
+}
+.banner-site-icon img{
+  padding-right: 28px;
+  padding-bottom: 32px;
+}
+
+
+/*********** What we do Section 03/06/2021 ****************/
+section.what-we-do{margin-bottom: 172px;}
+.we-do-title--area{
+  margin-bottom:82px;
+}
+.we-do--row{
+  margin-bottom: 102px!important;
+}
+.we-do--row:last-child{
+  margin-bottom: 0px!important;
+}
+.we-do--content.we-do--rightarea{
+  padding-left: 99px;
+}
+.we-do--content.we-do--leftarea{
+  padding-right: 99px;
+}
+.we-do-title--area h2{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color:#005579;
+}
+.we-do-title--area p{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #005579;
+}
+.we-do--picture img{
+  box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+.we-do--picture{
+  position: relative;
+}
+.pic-emp-box{
+  width:102px;
+  height:55px;
+  background:#3EBDCC;
+}
+.we-do--picture.we-do--leftarea .pic-emp-box{
+  position: absolute;
+  right: -7%;
+  top: 75%;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.we-do--picture.we-do--rightarea .pic-emp-box{
+  position: absolute;
+  top: 75%;
+  left:-5%;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.we-do--content{
+  padding-top: 40px;
+  padding-bottom:43px;
+}
+.we-do--content h3{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height:35px;
+  color: #005579;
+  margin-bottom:25px;
+}
+.we-do--content p{
+  font-family: 'robotothin';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #005579;
+  margin-bottom:20px;
+}
+
+.btn-outline-we-do:hover{
+  background:#3EBDCC;
+  border:1px solid #3EBDCC;
+}
+
+/******** Service section design 3/06/2021 ***********/
+.homepageService{
+  margin-bottom: 138px;
+}
+.homepageService h2{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color: #005579;
+  margin-bottom:38px;
+}
+.homepageService p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #005579;
+  margin-bottom:38px;
+  font-family: 'robotothin';
+}
+/******* How do we do layout 04/06/2021 **********/
+section.how-do-we-do{
+  margin-bottom: 135px;
+}
+.how-do-bg-img{
+  background: #fcfcfc url("../images/how-we-do-bg.jpg") no-repeat;
+  background-position: unset;
   background-size: cover;
+  position: relative;
+}
+.how-do-bg-img .how-do-bg-containerwrapper{
+  max-width: 394px;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  -ms-transform: translateY(-50%);
+  transform: translateX(-50%);
+  margin-bottom:125px;
+}
+.how-do-bg-img .how-do-bg-containerwrapper h2{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  text-shadow: 0px 4px 56px #000000;
+}
+.how-do-bg-img .how-do-bg-containerwrapper p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 44px #000000;
+  margin-bottom:23px;
+}
+.how-do-content-section{
+  padding: 198px 0 0 58px;
+  background: #FFFFFF;
+  box-shadow: -50px 3px 100px rgba(0, 0, 0, 0.1);
+}
+.how-do-content-section .how-do--contentarea{
+  position: relative;
+  bottom: 85px;
+}
+.how-do--icon-box img.compound-icon{
+  width:100%;
+}
+.how-do--contentarea .how-do-content-description h4{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #005579;
+  margin-bottom:23px;
+}
+
+.how-do--contentarea .how-do-content-description h6{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #005579;
+  margin-bottom:9px;
+}
+.how-do--contentarea .how-do-content-description p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #005579;
+  margin-bottom:0;
+}
+.how-do--contentarea .how-do--short-describe{
+  margin-bottom:48px;
+}
+.how-do-content-random-images img{
+  width:100%;
+}
+/******* Client list design section 03/06/2021 *********/
+section.clients-list{
+  margin-bottom: 116px;
+}
+.clients-list .owl-stage-outer{
+  padding: 80px 124px 80px 124px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.owl-theme .owl-nav .disabled{
+  opacity: 1;
+}
+.clients-list .owl-theme .owl-nav [class*=owl-]{
+  width: 48px;
+  height:48px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.clients-list .owl-nav button img{
+  width:16px;
+  height:16px;
+}
+.client-slider .owl-prev,
+.client-slider .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}
+
+/******* Testimonials design section 03/06/2021 *********/
+.testimonialSlides{
+  background: #ffffff;
+  box-shadow: 17px 22px 67px rgba(0, 0, 0, 0.25);
+  border-radius: 60px 60px 0px 0px;
+  position: relative;
+  top: 15px;
+  z-index: 2;
+}
+
+.testimonialSlides .teamMember-lists{
+  padding:101px 0 220px 101px;
+
+}
+.testimonialContents{
+  padding-left: 75px;
+}
+.testimonialContents h3{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #005579;
+  margin-bottom: 44px;
+}
+.testimonialContents img.icon{
+  padding-right: 30px;
+}
+.testimonialContents img.icon:last-child{
+  padding-right: 0px;
+}
+.teamMember-lists .c2d-teamMember-row{
+  margin:0 0 51px 0;
+}
+.c2d-teamMember-row .c2d-teamMember--name-designation{
+  margin-top: 41px;
+}
+.c2d-teamMember--name-designation .memberName{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.c2d-teamMember--name-designation .memberDesignation{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #878787;
+}
+.teamMember-lists .owl-stage-outer{
+  margin-bottom:63px;
+}
+.teamMember-lists .memberQuotes{
+  max-width: 347px;
+}
+.teamMember-lists .memberQuotes p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000000;
+}
+.teamMember-lists .owl-nav{
+  font-family: 'robotoregular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.teamMember-lists .owl-nav button img{
+  width:14px;
+  height:14px;
+}
+.teamMember-lists .owl-nav span.counter{
+  padding: 0 22px;
+}
+
+/* Heightlight footer box */
+.heightlight-footer-box{
+  background: #F4A41D;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
 }
 .box-content{
   padding: 100px 0 112px 0;
